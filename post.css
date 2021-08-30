@@ -1,0 +1,194 @@
+body {
+    background-color: whitesmoke;
+}
+.container{
+    display: grid;
+    grid-template-rows: 315px 10px 1fr 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "navbar"
+      "content"
+      "footer";
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding: 25px;
+    margin: auto;
+}
+
+.pageheader {
+    grid-area: header;
+    background-color: whitesmoke; 
+    margin: auto;
+}
+
+
+.title {
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    text-align: center;
+    align-items: stretch;
+    font-size: 60px;
+    font-weight: 300;
+    color: #4B4453;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+    
+.navbar {
+    grid-area: navbar;
+    background-color: whitesmoke;
+    display: flex;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    text-align: center;
+    flex-direction: column;
+    color: #4B4453;
+}
+
+.navbar_item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    border: #4B4453 1px solid;
+    border-radius: 25px;
+}
+
+.navbar_item:hover {
+    background-color:#368098;
+    color:whitesmoke;
+}
+
+#specialnav {
+    margin-left: -40px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* unvisited link */
+a:link {
+    color:#4B4453;
+}
+  
+/* visited link */
+a:visited {
+    color:#4B4453;
+}
+  
+/* mouse over link */
+a:hover {
+    color: whitesmoke;
+}
+  
+/* selected link */
+a:active {
+    color: #00C0A3;
+}
+
+.content_title {
+    grid-area: content;
+    background-color:#D5CABD;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    color: #4B4453;
+}
+
+h2, h3{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+}  
+
+h3 {
+    font-size: 12px;
+}
+
+.content{
+    grid-area: content;
+    background-color:#D5CABD;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    padding: 30px;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    color: #4B4453;
+    float: left;
+}
+
+#nurse {
+    max-width: 50%;
+    margin-right: 25px;
+    float: left;
+}
+
+#caption {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    font-size: 12px;
+    margin-top: 5px;
+    float: left;
+    max-width: 50%;
+    margin-bottom: 5px;
+}    
+
+.footer{
+    grid-area: footer;
+    background-color:#368098;
+    border-radius: 50px;
+  }
+
+#avatar {
+  max-height: 100px;
+  max-width: 100px;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 25px;
+  border:#4B4453 1px solid;
+  float: left;
+}
+
+#contactinfo {
+  margin-top: 50px;
+  margin-bottom: auto;
+  float: left;
+  padding-left: 10px;
+  color: whitesmoke;
+  font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#top {
+  display: flex;
+  padding: 15px;
+  border: #4B4453 1px solid;
+  border-radius: 25px;
+  margin: 50px;
+  max-width: 100px;
+  justify-content: center;
+  float: right;
+  background-color: whitesmoke;
+  font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+  color: #4B4453;
+}
+
+@media (min-width: 750px){
+  .container{  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "content content content content"
+  "footer footer footer footer";
+ }
+}
