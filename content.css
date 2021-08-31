@@ -1,0 +1,23 @@
+.content{
+    grid-area: content;
+    background-color:#D5CABD;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    padding: 30px;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    font-weight: 300;
+    color: #4B4453;
+    }
+
+#nurse {
+    max-width: 100%;
+}
+
+#caption {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    font-size: 12px;
+}    

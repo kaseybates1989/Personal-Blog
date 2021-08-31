@@ -1,0 +1,40 @@
+.footer{
+    grid-area: footer;
+    background-color:#368098;
+    border-radius: 50px;
+}
+
+#avatar {
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+    border:#4B4453 1px solid;
+    float: left;
+}
+
+#contactinfo {
+    margin-top: 50px;
+    margin-bottom: auto;
+    float: left;
+    padding-left: 10px;
+    color: whitesmoke;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+#top {
+    display: flex;
+    padding: 15px;
+    border: #4B4453 1px solid;
+    border-radius: 25px;
+    margin: 50px;
+    max-width: 100px;
+    justify-content: center;
+    float: right;
+    background-color: whitesmoke;
+    font-family: 'Quicksand', 'Open Sans', 'Montserrat', sans-serif;
+    color: #4B4453;
+}
+
